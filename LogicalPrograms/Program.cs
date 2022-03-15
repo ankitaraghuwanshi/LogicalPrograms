@@ -1,27 +1,33 @@
 ﻿using System;
 namespace LogicalPrograms
 {
-    class FibonacciSeries
+    class Program
     {
         public static void Main(string[] args)
         {
-            int a = 0;
-            int b = 1;
-            int c;
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-            for (int i = 0; i <10; i++)
+           
+            Console.WriteLine("1 for FINDING fibonacii series");
+            Console.WriteLine("Enter the according to  above condition : \n");
+
+            int answer = int.Parse(Console.ReadLine());
+
+            switch (answer)
             {
-                c = a + b;
-                Console.WriteLine(c);
-                a = b;
-                b = c;
+                case 1:
+                    FibonacciSeries fibonacciSeries = new FibonacciSeries();
+                    fibonacciSeries.Fb();
+                    break;
+
+               
+
+                default:
+                    Console.WriteLine("Please enter a valid number.");
+                    break;
             }
-              
 
         }
-
     }
-
-
 }
+        
+    
+
